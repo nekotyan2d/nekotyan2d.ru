@@ -1,0 +1,28 @@
+:root {
+    // Accent
+    --accent: #009e89;
+    --accent-dim: rgba(0, 158, 137, 0.12);
+
+    --accent-strong: #007d6e;
+    --accent-strong-hover: #006d60;
+
+    --bg: #f8f8f6;
+    --surface: #efefed;
+    --text: #111111;
+    --text-muted: #6e6e6e;
+    --border: rgba(0, 0, 0, 0.08);
+
+    --accent-text: #007d6e;
+
+    --nav-text: #5e5e5e;
+}
+
+[data-theme="dark"] {
+    --bg: #0c0c0c;
+    --surface: #141414;
+    --text: #f0f0f0;
+    --text-muted: #909090;
+    --accent-text: #009e89;
+    --nav-text: #909090;
+    --border: rgba(255, 255, 255, 0.08);
+}
