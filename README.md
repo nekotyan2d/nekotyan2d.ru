@@ -1,75 +1,35 @@
-# Nuxt Minimal Starter
+# nekotyan2d.ru
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Сайт](https://img.shields.io/badge/сайт-nekotyan2d.ru-009e89)](https://nekotyan2d.ru)
+[![Build](https://github.com/nekotyan2d/nekotyan2d.ru/actions/workflows/build.yml/badge.svg)](https://github.com/nekotyan2d/nekotyan2d.ru/actions/workflows/build.yml)
 
-## Setup
+Личный сайт-портфолио. Минимализм, светлая и темная темы, анимированный glow-фон на hero, анимации появления при скролле.
 
-Make sure to install dependencies:
+![Превью сайта](./screenshots/preview.png)
+
+## Стек
+
+- **Nuxt 4** (SSG) + Vue 3, TypeScript
+- **SCSS** + CSS-переменные для тем
+- **GSAP** — анимации, ScrollTrigger
+- **@nuxt/fonts** (self-host Inter), **@nuxt/icon**, **@nuxtjs/color-mode**
+
+## Разработка
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
 bun install
+bun run dev # http://localhost:3000
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Сборка
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+bun run generate # статика в .output/public
 ```
 
-## Production
-
-Build the application for production:
+## Docker
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+docker build -t nekotyan2d .
+docker run --rm -p 8080:80 nekotyan2d   # http://localhost:8080
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
